@@ -5,9 +5,9 @@ Very simple quickstart using [Webpack](https://webpack.github.io/) and [Buble](b
 `npm install`
 
 ## Configuration
-The default setup using `src/main.js` and the ES6 entry and outputs to `dist/bundle.js`. These paths, and other Webpack settings, can be configued in `webpack.config.js`;
+The default setup uses `src/main.js` as the ES6 entry path and `dist/bundle.js` as the output path. These paths, and other Webpack settings, can be configued in `webpack.config.js`;
 
 ## Commands
-`npm run build` will bundle modules and compile to ES5. This command is defined in `package.json` and is aliased to `./node_modules/.bin/webpack`.
+`npm run build` bundles modules and compiles to ES5. This command is defined in `package.json` and is aliased to `./node_modules/.bin/webpack`.
 
-`npm run watch` will run `webpack` (i.e., `npm run build`) and then rerun it on file change.
+`npm run watch` will run `webpack` (i.e., `npm run build`) and then rerun it on file change. This command is defined in `package.json` and is aliased to `./node_modules/.bin/webpack -w`.
