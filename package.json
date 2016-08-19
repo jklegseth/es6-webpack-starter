@@ -1,0 +1,19 @@
+{
+  "name": "es6-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "buble": "^0.13.1",
+    "buble-loader": "^0.2.1",
+    "webpack": "^2.1.0-beta.7"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
