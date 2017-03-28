@@ -1,5 +1,5 @@
 # es6-to-es5-quickstart-webpack
-Very simple quickstart using [Webpack](https://webpack.github.io/) and [Buble](buble.surge.sh) for ES6 to ES5 compilation with support for module bundling.
+Very simple quickstart using [Webpack](https://webpack.github.io/) and [Bable](http://babeljs.io/) for ES6 to ES5 compilation with support for module bundling.
 
 ## Installation
 `npm install`
