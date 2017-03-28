@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+'use strict';
 
 module.exports = {
   entry: './src/main.js',
@@ -11,7 +11,10 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'buble' }
+      {
+        test: /\.js$/,
+        use: 'babel-loader'
+      }
     ]
   }
 };
