@@ -1,6 +1,13 @@
+/** Class HelloWorld */
 class HelloWorld {
+
+  /**
+   * Says hello
+   * @return {string} hello greeting
+   */
   static sayHello() {
-    return 'HelloWorld says, of all things, hello!';
+    let someString = 'hellooooo!';
+    return `HelloWorld says, of all things, ${someString}`;
   }
 }
 
