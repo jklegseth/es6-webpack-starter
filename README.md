@@ -1,5 +1,5 @@
 # es6-to-es5-quickstart-webpack
-Very simple quickstart using [Webpack](https://webpack.github.io/) and [Bable](http://babeljs.io/) for ES6 to ES5 compilation with support for module bundling and [Webpack Dev Server](https://github.com/webpack/webpack-dev-server). Incluces `eslint` using Google's [config](https://github.com/google/eslint-config-google) as a starting point.
+Very simple quickstart using [Webpack](https://webpack.github.io/) and [Bable](http://babeljs.io/) for ES6 to ES5 compilation with support for module bundling and [Webpack Dev Server](https://github.com/webpack/webpack-dev-server). Includes [`eslint`](https://github.com/eslint/eslint) using Google's [config](https://github.com/google/eslint-config-google) as a starting point.
 
 ## Installation
 `npm install`
