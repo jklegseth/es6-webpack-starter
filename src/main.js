@@ -1,6 +1,4 @@
-import ConsoleLogger from './ConsoleLogger';
-import HelloWorld from './classes/HelloWorld';
+import { sayHello } from './modules/greetings';
+import './styles/main.scss';
 
-new ConsoleLogger('Hello from the ConsoleLogger').logToConsole();
-
-console.log(HelloWorld.sayHello());
+console.log(sayHello());

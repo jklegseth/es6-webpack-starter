@@ -1,17 +1,24 @@
-# es6-to-es5-quickstart-webpack
-Very simple quickstart using [Webpack](https://webpack.github.io/) and [Bable](http://babeljs.io/) for ES6 to ES5 compilation with support for module bundling and [Webpack Dev Server](https://github.com/webpack/webpack-dev-server). Includes [`eslint`](https://github.com/eslint/eslint) using Google's [config](https://github.com/google/eslint-config-google) as a starting point.
+# ES6 Webpack Starter
+Meant to be a quick starter for an ES6 project using Webpack, Babel, etc. Trying to not be too opinionated here while still providing enough structure to get coding.
+
+## Features
+- Webpack, Babel, eslint
+- supports `.env` files
+- webpack-dev-server
+- basic Node server included, great for deployment
+- Jest
+- Sass compilation
 
 ## Installation
-`npm install`
-
-## Configuration
-The default setup uses `src/main.js` as the ES6 entry path and `dist/bundle.js` as the output path. These paths, and other Webpack settings, can be configued in `webpack.config.js`;
+`yarn install`
 
 ## Commands
-`npm run build` bundles modules and compiles to ES5. This command is defined in `package.json` and is aliased to `./node_modules/.bin/webpack`.
-
-`npm run watch` will run `webpack` (i.e., `npm run build`) and then rerun it on file change. This command is defined in `package.json` and is aliased to `./node_modules/.bin/webpack -w`.
-
-`npm run lint` will run `eslint` against all files in `src`.
-
-`npm run serve` will serve files at `http://localhost:8080/` and `watch` `.js` files.
+- `yarn build` - production build
+- `yarn build:dev` - dev build
+- `yarn watch` - `webpack -w`
+- `yarn lint` - lints `/src`
+- `yarn dev-server` - dev server with reload
+- `yarn test` - one time run of tests
+- `yarn test:watch` - watches files and reruns tests related to changes
+- `yarn test:watchAll` - watches files and reruns all tests on change
+- `yarn start` - starts Node server on port `3000`
