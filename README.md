@@ -22,3 +22,9 @@ Meant to be a quick starter for an ES6 project using Webpack, Babel, etc. Trying
 - `yarn test:watch` - watches files and reruns tests related to changes
 - `yarn test:watchAll` - watches files and reruns all tests on change
 - `yarn start` - starts Node server on port `3000`
+
+## .env
+
+Currently the `.env` files are empty. For local development create a `.env.development` and `.env.test` file. These are great for storing database connection properties, API keys, etc.
+
+For production create a `.env.production` file but obviously it will depend on the host. For example, with Heroku you will need to add these properties to the "Config Variables" under "Settings".
