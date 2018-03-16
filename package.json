@@ -3,23 +3,42 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.2.1",
+    "babel-jest": "^22.4.1",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-es2016": "^6.22.0",
+    "css-loader": "^0.28.10",
     "eslint": "^3.18.0",
     "eslint-config-google": "^0.7.1",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.2"
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.11.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "3.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "dotenv": "4.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jest": "^23.0.0-alpha.0",
+    "node-sass": "^4.7.2",
+    "webpack-dev-server": "2.5.1"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "NODE_ENV=production webpack -p",
+    "build:dev": "webpack -d",
     "watch": "webpack -w",
     "lint": "./node_modules/.bin/eslint src/**",
-    "serve": "node_modules/.bin/webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
+    "test:watch": "cross-env NODE_ENV=test jest --watch --config=jest.config.json",
+    "test:watchAll": "cross-env NODE_ENV=test jest --watchAll --config=jest.config.json",
+    "start": "node server/server.js"
   },
   "keywords": [],
   "author": "",
